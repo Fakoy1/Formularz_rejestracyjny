@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        padding: 20px;
+    }
+
+    form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h3, h4 {
+        color: #333;
+    }
+
+    input[type="text"], textarea, select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    </style>
+
+</head>
+<body>
+<form>
+    <h1>Formularz Rejestracyjny:</h1>
+        <p>Podaj swoje nazwisko:
+        <input type="text" name="nazwisko" value="" size="30"></p>
+        <p>Podaj swoje imie:
+            <input type="text" name="imie"  value="" size="30"></p>
+
+        <p> <h4>Podaj adres e-mail:</h4></p>
+        <input type="text" name="adres" value="">
+        <input type="submit" value="Wyslij">
+
+        <h4>Wybierz plec:</h3>
+        <p>
+            <input type="radio" value="Kobieta" name="plec"> Kobieta
+            <input type="radio" value="Meszczyzna" name="plec">Meszczyzna
+        </p>
+
+        <p>Podaj swoj wiek: <br>
+            <input type="text" name="wiek" value="" size="30"></p>
+
+
+        <fieldset>
+            <legend><h3>Wyksztalcenie:</h3></legend>
+        <p><input type="radio" value="podstawowe" name="grupa_opcji" checked>Podstawowe <br>
+            <input type="radio" value="Srednie" name="grupa_opcji">Srednie<br>
+        <input type="radio" value="Wyzsze" name="grupa_opcji">Wyzsze
+        </p>
+        </fieldset>
+
+        <h3>Wybierz język</h3>
+        <select>
+        <option value="Język angielski" selected="selected">Język angielski</option>
+        <option value="Język niemiecki">Język niemiecki</option>
+        <option value="Język włoski" selected="selected">Język włoski</option>
+        <option value="Język francuski ">Język francuski</option>
+        <option value="Język hiszpański">Język hiszpański</option>
+        <option value="Język ukraiński">Język ukraiński</option>
+        </select>
+
+        <fieldset>
+        <legend><h3>Wybierz zainteresowania</h3></legend>
+        <input type="checkbox" name="opcje"> Motoryzacja <br>
+        <input type="checkbox" name="opcje"> Sport <br>
+        <input type="checkbox" name="opcje"> Muzyka <br>
+        <input type="checkbox" name="opcje"> Taniec <br>
+        <input type="checkbox" name="opcje"> Gry komputerowe <br>
+        <input type="checkbox" name="opcje"> Inne (podaj jakie): <input type="text"></p>
+        </fieldset>
+
+
+        <h4>Wpisz swoje uwagi</h4>
+        <p>
+        <textarea name="uwagi"  cols="40" rows="20"> </textarea></p>
+
+
+        <p><input type="checkbox" name="opcje"> zgadzam sie z prztwarzaniem moich danych osobowych</p>
+    </form>
+</body>
+</html>
